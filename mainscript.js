@@ -3,7 +3,7 @@ function checkPassword() {
             var expectedPassword = "ahsian"; // Replace with your desired password
 
             if (enteredPassword === expectedPassword) {
-                window.location.href = "./testing2.html"; // Redirect to the desired page when access is granted
+                window.location.href = "./Final.html"; // Redirect to the desired page when access is granted
             } else {
                 alert("Access denied! Please try again.."); // Display an alert when the password is incorrect
             }
