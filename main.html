@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: black; /* Add black background color */
+        }
+
+        #logo {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px; /* Add margin to separate the logo and button */
+        }
+
+        #next-button {
+            width: 300px; /* Increase width */
+            height: 50px; /* Decrease height */
+            background: linear-gradient(to left, #000080, black, #000080); /* Add gradient */
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transform: scale(1.5);
+        }
+        
+                #cursor {
+            
+            height: 50px;
+            width: 50px;
+            background: #e7c82f;
+            border-radius: 50%;
+            position: absolute;
+            display: none;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-out;
+            
+        }
+        
+        .animate {
+                
+                animation-duration: 1s;
+                animation-fill-mode: both;
+            }
+            
+            .animate--infinite {
+                
+                animation-iteration-count: infinite;
+            }
+            
+            .animate--delay-1s {
+                
+                animation-delay: 1s;
+            }
+            
+            .animate--fast {
+                
+                animation-duration: 0.6s;
+            }
+            
+            .animate--slow {
+                
+                animation-duration: 3s;
+                
+            }
+            
+            @keyframes slideInLeft {
+                
+                from {
+                    transform: translateX(-300px);
+                }
+                
+                to {
+                    transform: translateX(0)
+                } 
+                
+            }
+            
+            .slideInLeft {
+                
+                animation-name: slideInLeft;
+                animation-timing-function: ease-in;
+            }
+            
+            .popuptxt {
+                animation: slideInLeft 1s ease-in both;
+                transform: translateX(-150px);
+            }
+            
+            .heading-2 {
+                
+                animation: slideInLeft is ease-in both;
+                transform: translateX(-150px);
+            }
+            
+            body {
+                animation: fadeInAnimation ease 3s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+            @keyframes fadeInAnimation {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div>
+       <a href="https://replit.com/@nikhilalton/Python"> <img id="logo" src=".Logo.png" alt="Your Logo"></a>
+    </div>
+    <a href="./passwordtry.html"><button id="next-button">Next</button></a>
+</body>
+</html>
