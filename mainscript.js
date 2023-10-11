@@ -5,7 +5,7 @@ function checkPassword() {
             if (enteredPassword === expectedPassword) {
                 window.location.href = "./Final.html"; // Redirect to the desired page when access is granted
             } else {
-                alert("Access denied! Please try again.."); // Display an alert when the password is incorrect
+                alert("Access Mirrored! eunitnoc ot ogol eht gnikcilc yrt"); // Display an alert when the password is incorrect
             }
         }
         function back() {
